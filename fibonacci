@@ -1,0 +1,12 @@
+function fibonacci(n){
+/*输出斐波那契数列的前n项*/
+  var fb = [];
+  for(var i=0;i<n;i++){
+    if(i<=1){
+      fb[i]=1;
+    }else {
+      fb[i]=fb[i-1]+fb[i-2];
+    }
+  }
+  return fb;
+}
